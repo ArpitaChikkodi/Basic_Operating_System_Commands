@@ -1,0 +1,71 @@
+Linux Commands
+
+
+Listing the directory content
+ls 
+	It lists all the directories in the current working directory
+	
+ls /
+	It lists all the directories in root folder
+
+ls -l 
+	Long listing(detailed info)
+	
+[cmd] --help
+	It shows the list of flags that can be used with the command
+	
+man [cmd]
+	Same as above with more details(manual/man pages)
+	
+ls -l -a   (or) ls -la
+	Shows the hidden files too(l - long listing, a - all)
+	
+Note : You can hide a file in Linux by prepending . to the file name
+Ex: .info - is a hidden file
+
+
+cd - change directory
+cd [path]
+Absolute Path - Path that starts from main directory
+Relative Path - Path from current directory
+
+pwd
+	Present Working Directory
+If pwd gives /Home/Users
+
+To move to Abc folder in /Home/Users
+Absolute path -> cd /Home/Users/Abc
+Relative path -> cd Abc
+
+cd ..
+	It takes to the directory containing the present directory
+Ex: cd ../[folder]
+
+cd ~ 
+	Shortcut / path to home directory
+Ex: cd ~/Desktop
+
+Note: Tab Completion - shows all options at once, . means present directory
+
+
+Adding Directories
+mkdir [name]- make directory
+Ex: mkdir MyDirectory
+
+Note: In CLI the Directory name cannot be given with spaces as below
+>mkdir My Directory
+It considers Directory as an argument of mkdir command, So to include space we can use backslash(\) 
+i.e., escape character in bash or write name in single quotes
+>mkdir My\ Directory   (or) >mkdir 'MyDirectory'
+
+Note : Bash feature called history. Each and every time you enter in a command,
+it gets saved into memory and added to a special file. 
+You can go through the previous commands you used with the history command using the top and down arrows. 
+
+>history 
+Ctrl-R => shortcut for back search or in the history
+Ex: Ctrl-R My =>outputs mkdir MyDirectory
+
+clear 
+It does not wipe history, it just clears output on the screen
+

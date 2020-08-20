@@ -1,0 +1,60 @@
+Windows Commands
+
+
+Listing the directory content
+ls C:\ 
+	Shows all the subfolders of C drive
+
+ls -Force C:\
+	Shows the hidden folders too
+	
+Get-Help [cmd]
+	It gives the info of cmd
+Ex : Get-Help ls , Get-Help ls -Full => complete info with examples
+
+
+Changing Directories
+cd - change directory
+cd [path]
+Absolute Path - Path that starts from main directory
+Relative Path - Path from current directory
+
+pwd
+	Present Working Directory
+If pwd gives C:\Users
+
+To move to Abc folder in C:\Users
+Absolute path -> cd C:\Users\Abc
+Relative path -> cd Abc
+
+cd ..
+	It takes to the directory containing the present directory
+
+cd ~ 
+	Shortcut / path to home directory
+Ex: cd ~\Desktop
+
+Note: Tab Completion - rotates the options, . means present directory
+
+
+Adding Directories
+mkdir [name]- make directory
+Ex: mkdir MyDirectory
+
+Note: In CLI the Directory name cannot be given with spaces as below
+>mkdir My Directory
+It considers Directory as an argument of mkdir command, So to include space we can use backquote(`) 
+i.e., escape character in powershell or write name in single quotes
+>mkdir My` Directory   (or) >mkdir 'MyDirectory'
+
+Note : PowerShell feature called history. Each and every time you enter in a command,
+it gets saved into memory and added to a special file. 
+You can go through the previous commands you used with the history command using the top and down arrows. 
+
+>history 
+Ctrl-R => shortcut for back search or in the history
+Ex: Ctrl-R My =>outputs mkdir MyDirectory
+
+clear 
+It does not wipe history, it just clears output on the screen
+
